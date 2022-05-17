@@ -2592,6 +2592,17 @@ window.addEventListener("load", function bienvenida (){
         
         let buscarEscrito = buscarField.value;
         let buscarEscritoMayus = buscarEscrito.charAt(0).toUpperCase() + buscarEscrito.slice(1).toLowerCase();
+        let buscarEscritoA = buscarEscritoMayus.replace("Á","a")
+        let buscarEscritoE = buscarEscritoA.replace("É","e")
+        let buscarEscritoI = buscarEscritoE.replace("Í","i")
+        let buscarEscritoO = buscarEscritoI.replace("Ó","o")
+        let buscarEscritoU = buscarEscritoO.replace("Ú","u")
+        let buscarEscritoA2 = buscarEscritoU.replace("á","a")
+        let buscarEscritoE2 = buscarEscritoA2.replace("é","e")
+        let buscarEscritoI2 = buscarEscritoE2.replace("í","i")
+        let buscarEscritoO2 = buscarEscritoI2.replace("ó","o")
+        let buscarEscritoU2 = buscarEscritoO2.replace("ú","u")
+
 
         var seleccionarLiga = document.getElementById("Liga");
         var LigaSeleccionada = seleccionarLiga.selectedIndex;
@@ -2714,7 +2725,7 @@ window.addEventListener("load", function bienvenida (){
                                                             
                                                             
                                                             if (
-                                                                buscarEscritoMayus == '' || buscarEscritoMayus == baseDeDatos[jug].Jugador.substring(3)
+                                                                buscarEscritoU2 == '' || buscarEscritoU2 == baseDeDatos[jug].Jugador.substring(3)
                                                             ) {
 
                                                             
